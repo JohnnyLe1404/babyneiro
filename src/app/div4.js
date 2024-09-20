@@ -60,7 +60,7 @@ const Div4 = () => {
         className="min-h-screen bg-cover bg-center text-white flex flex-col items-center justify-center" // Added justify-center to center the content vertically
         style={{ backgroundImage: "url('/image/why3.png')" }}
       >
-        <div className="flex flex-col justify-center max-w-[90%] md:max-w-[70%] lg:max-w-[50%] text-left p-4 md:p-8 mr-auto mr-64">
+        <div className="flex flex-col justify-center max-w-[90%] md:max-w-[70%] lg:max-w-[50%] text-left p-4 md:p-8 mr-64">
           <p className="text-sm md:text-xl text-[#334618] max-w-[65%]">
             With all that momentum,{" "}
             <strong>
