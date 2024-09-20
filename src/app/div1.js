@@ -62,8 +62,8 @@ export default function Div1() {
       )}
 
       {/* Content */}
-      <div className="flex flex-col items-center mt-12 md:mt-44 md:ml-72 text-center px-4 md:px-0">
-        <div className="flex flex-col items-center text-center">
+      <div className="flex flex-col items-center mt-40 md:mt-44 md:ml-72 text-center px-4 md:px-0">
+      <div className="flex flex-col items-center text-center">
           <h1 className="text-3xl md:text-5xl font-bold mt-4 mb-6 md:mb-8">Welcome to</h1>
           <div className="flex items-center space-x-2 mb-2">
             <h2 className="text-5xl md:text-8xl font-extrabold mb-6 md:mb-10 text-white">
