@@ -7,8 +7,7 @@ const Div4 = () => {
      className="text-[#334618]">
       {/* div 1 */}
       <div
-        className="min-h-screen bg-cover bg-center flex flex-col items-center"
-        style={{ backgroundImage: "url('/image/why1.png')" }}
+        className="min-h-screen bg-cover bg-[#E3E0DA] bg-center flex flex-col items-center bg-[url('/image/why1.1.png')] md:bg-[url('/image/why1.png')]"
       >
         <div className="flex flex-col justify-center w-full max-w-7xl px-4 sm:px-6 lg:px-8 mt-10 md:mt-20">
           <div className="mb-6 md:mb-10">
@@ -39,8 +38,7 @@ const Div4 = () => {
 
       {/* div 2 */}
       <div
-        className="min-h-screen bg-cover bg-center flex flex-col items-center justify-center"
-        style={{ backgroundImage: "url('/image/why2.png')" }}
+        className="min-h-screen bg-cover bg-[#E3E0DA] bg-center flex flex-col items-center justify-center bg-[url('/image/why2.1.png')] md:bg-[url('/image/why2.png')]"
       >
         <div className="flex flex-col justify-center w-full max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="ml-auto max-w-prose">
@@ -63,8 +61,7 @@ const Div4 = () => {
 
       {/* div 3 */}
       <div
-        className="min-h-screen bg-cover bg-center flex flex-col items-center justify-center"
-        style={{ backgroundImage: "url('/image/why3.png')" }}
+        className="min-h-screen bg-cover bg-[#E3E0DA] bg-center flex flex-col items-center justify-center bg-[url('/image/why3.1.png')] md:bg-[url('/image/why3.png')]"
       >
         <div className="flex flex-col justify-center w-full max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-prose">

@@ -4,8 +4,7 @@ const Div2 = () => {
   return (
     <div
     id="div2"
-      className="min-h-screen bg-cover bg-center text-white flex flex-col items-center"
-      style={{ backgroundImage: "url('/image/bg2.png')" }}
+      className="min-h-screen bg-cover bg-center text-white flex flex-col items-center bg-[url('/image/bg2.1.png')] md:bg-[url('/image/bg2.png')]"
     >
       <div className="w-full max-w-full py-6 mx-auto bg-black bg-opacity-25 z-50">
         <div className="text-center mb-4 mt-2">

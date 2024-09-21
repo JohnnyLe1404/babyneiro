@@ -1,15 +1,33 @@
 import Image from "next/image";
+import { useState, useEffect } from "react";
 
 const Div5 = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    // Set initial state
+    handleResize();
+
+    // Add event listener
+    window.addEventListener("resize", handleResize);
+
+    // Clean up
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
   return (
-    <div 
-    name="div5"
-    className="relative min-h-screen flex items-center justify-center bg-[#fbfaf9] px-4 py-12 sm:px-6 lg:px-8">
+    <div
+      name="div5"
+      className="relative min-h-screen flex items-center justify-center bg-[#fbfaf9] px-4 py-12 sm:px-6 lg:px-8"
+    >
       <Image
-        src="/image/bg3.png"
+        src={isMobile ? "/image/bg3.1.png" : "/image/bg3.png"}
         alt="Background"
-        layout="fill"
-        objectFit="contain"
+        fill
+        style={{ objectFit: "contain" }}
         quality={100}
         priority
         className="pointer-events-none"

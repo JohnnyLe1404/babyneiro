@@ -12,9 +12,8 @@ export default function Div1() {
 
   return (
     <div
-    name="div1"
-      className="min-w-screen min-h-screen bg-cover bg-center text-white flex flex-col items-start"
-      style={{ backgroundImage: "url('/image/bg1.png')" }}
+      name="div1"
+      className="min-w-screen min-h-screen bg-cover bg-center text-white flex flex-col items-start bg-[url('/image/bg1.1.png')] md:bg-[url('/image/bg1.png')]"
     >
       {/* Header */}
       <header className="w-full max-w-full justify-between mx-auto flex items-center p-4 bg-black bg-opacity-60 z-50">
