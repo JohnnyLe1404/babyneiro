@@ -2,7 +2,9 @@ import Image from "next/image";
 
 const Div4 = () => {
   return (
-    <main className="text-[#334618]">
+    <main
+    name="div4"
+     className="text-[#334618]">
       {/* div 1 */}
       <div
         className="min-h-screen bg-cover bg-center flex flex-col items-center"

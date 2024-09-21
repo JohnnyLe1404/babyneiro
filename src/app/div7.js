@@ -2,7 +2,9 @@ import Image from "next/image";
 
 const Div7 = () => {
   return (
-    <div className="bg-[url('/image/bg5.png')] bg-cover bg-center min-w-screen text-[#334618] min-h-screen flex flex-col items-center p-4 md:p-8">
+    <div
+    name="div7"
+     className="bg-[url('/image/bg5.png')] bg-cover bg-center min-w-screen text-[#334618] min-h-screen flex flex-col items-center p-4 md:p-8">
 
       <div className="flex justify-center mb-12 md:mb-24">
         <div className="flex space-x-64 md:space-x-[40rem] lg:space-x-[50rem]"> {/* Adjusted spacing */}

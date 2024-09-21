@@ -34,7 +34,9 @@ const Div8 = () => {
   ];
 
   return (
-    <div className="bg-[#fbfaf9] text-[#334618] flex justify-center items-center flex-col space-y-4 py-8 px-4 sm:px-6 lg:px-8">
+    <div 
+    name="div8"
+    className="bg-[#fbfaf9] text-[#334618] flex justify-center items-center flex-col space-y-4 py-8 px-4 sm:px-6 lg:px-8">
       <div className="flex items-center space-x-4 p-4">
         <span className="text-4xl sm:text-5xl lg:text-6xl font-semibold">
           FAQ

@@ -1,8 +1,23 @@
 import Image from "next/image";
+import { useState } from "react";
 
 const Div6 = () => {
+  const [copyText, setCopyText] = useState(
+    "HhJpBhRRn4g56VsyLuT8DL5Bv31HkXqsrahTTUCZeZg4"
+  );
+  const [isCopied, setIsCopied] = useState(false);
+
+  const handleCopy = () => {
+    navigator.clipboard.writeText(copyText).then(() => {
+      setIsCopied(true);
+      setTimeout(() => setIsCopied(false), 350);
+    });
+  };
   return (
-    <div className="bg-[url('/image/bg6.png')] bg-cover bg-center text-[#334618] min-h-screen w-full flex flex-col justify-between p-4 space-y-4 md:space-y-6 lg:space-y-8">
+    <div
+      name="div6"
+      className="bg-[url('/image/bg6.png')] bg-cover bg-center text-[#334618] min-h-screen w-full flex flex-col justify-between p-4 space-y-4 md:space-y-6 lg:space-y-8"
+    >
       {/* Tokenomics Section - Moved to the top */}
       <div className="flex flex-col items-center space-y-4 md:space-y-6 lg:space-y-8">
         <div className="flex items-center space-x-2 md:space-x-4">
@@ -37,7 +52,7 @@ const Div6 = () => {
           </span>
           <div className="flex items-center">
             <span className="text-right text-sm md:text-base lg:text-xl truncate max-w-[150px] md:max-w-[300px] lg:max-w-none">
-              HhJpBhRRn4g56VsyLuT8DL5Bv31HkXqsrahTTUCZeZg4
+              {isCopied ? "Copied to clipboard" : copyText}
             </span>
             <Image
               src="/image/copy.png"
@@ -45,6 +60,7 @@ const Div6 = () => {
               width={24}
               height={24}
               className="ml-2 w-6 h-6 md:w-8 md:h-8 object-contain cursor-pointer"
+              onClick={handleCopy}
             />
           </div>
         </div>

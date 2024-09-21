@@ -3,6 +3,7 @@ import Image from "next/image";
 const Div2 = () => {
   return (
     <div
+    id="div2"
       className="min-h-screen bg-cover bg-center text-white flex flex-col items-center"
       style={{ backgroundImage: "url('/image/bg2.png')" }}
     >

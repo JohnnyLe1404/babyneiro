@@ -2,7 +2,9 @@ import Image from "next/image";
 
 const Div9 = () => {
   return (
-    <div className="bg-[url('/image/footer.png')] bg-[#fbfaf9] bg-cover bg-center w-full py-8 md:py-12 lg:py-16 flex flex-col items-center">
+    <div
+    name="div9"
+     className="bg-[url('/image/footer.png')] bg-[#fbfaf9] bg-cover bg-center w-full py-8 md:py-12 lg:py-16 flex flex-col items-center">
       <div className="w-full flex flex-col md:flex-row justify-around items-center px-4 md:px-8 lg:px-16 space-y-4 md:space-y-0">
         <div className="text-4xl md:text-4xl lg:text-6xl font-bold text-center md:text-left">
           BABY NEIRO

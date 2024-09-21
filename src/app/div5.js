@@ -2,7 +2,9 @@ import Image from "next/image";
 
 const Div5 = () => {
   return (
-    <div className="relative min-h-screen flex items-center justify-center bg-[#fbfaf9] px-4 py-12 sm:px-6 lg:px-8">
+    <div 
+    name="div5"
+    className="relative min-h-screen flex items-center justify-center bg-[#fbfaf9] px-4 py-12 sm:px-6 lg:px-8">
       <Image
         src="/image/bg3.png"
         alt="Background"
