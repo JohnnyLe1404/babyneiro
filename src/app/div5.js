@@ -41,18 +41,18 @@ const Div5 = () => {
             $BABYNEIRO
           </h1>
           <div className="space-y-4 text-left text-lg sm:text-xl md:text-2xl">
-            <p>- Download any EVM-compatible wallet.</p>
+            <p>- Download any <strong>EVM</strong>-compatible wallet.</p>
             <p>
-              - Buy some $ETH from an exchange and withdraw it to your EVM
+              - Buy some <strong>$ETH</strong> from an exchange and withdraw it to your EVM
               wallet (ERC-20 compatible).
             </p>
             <p>
-              - Head to Uniswap, enter the $BABYNEIRO contract address, and make
+              - Head to <strong>Uniswap</strong>, enter the <strong>$BABYNEIRO</strong> contract address, and make
               your purchase.
             </p>
             <p>
-              - Already got ETH on another chain? No worries! You can bridge
-              your ETH over to Ethereum and buy $BABYNEIRO from there.
+              - Already got <strong>ETH</strong> on another chain? No worries! You can bridge
+              your <strong>ETH</strong> over to Ethereum and buy <strong>$BABYNEIRO</strong> from there.
             </p>
           </div>
         </div>

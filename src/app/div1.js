@@ -136,26 +136,31 @@ export default function Div1() {
       )}
 
       {/* Content */}
-      <div className="flex flex-col items-center mt-40 md:mt-44 md:ml-72 text-center px-4 md:px-0">
+      <div className="flex flex-col items-center mt-40 md:mt-44 md:ml-52 text-center px-4 md:px-0">
         <div className="flex flex-col items-center text-center">
-          <h1 className="text-3xl md:text-5xl font-bold mt-4 mb-6 md:mb-8">
-            Welcome to
+          <h1 className="text-5xl md:text-6xl font-bold mt-4 mb-2 md:mb-4">
+            Meet
           </h1>
           <div className="flex items-center space-x-2 mb-2">
-            <h2 className="text-5xl md:text-8xl font-extrabold mb-6 md:mb-10 text-white">
-              BABY NEIRO
+            <h2 className="text-5xl md:text-8xl font-extrabold mb-2 md:mb-4 text-white">
+              BABYNEIRO
             </h2>
           </div>
           <p className="text-gray-100 mb-6 text-base md:text-lg px-4 md:px-0">
-            The First BabyNeiro on ETHEREUM, managed by community with all our
-            hearts
+            <span className="text-3xl md:text-4xl">
+              The First <strong>BabyNeiro</strong> on <strong>ETHEREUM</strong>
+            </span>
+            <br />
+            <span className="text-2l md:text-3xl">
+              managed by community with all our hearts
+            </span>
           </p>
           <div className="space-y-4 md:space-y-0 md:space-x-4">
             <a
               href="#"
               className="bg-white text-black border border-black rounded-full px-6 py-3 inline-block hover:bg-gray-300 w-full md:w-auto"
             >
-              Buy BABY NEIRO
+              Buy <strong>$BABYNEIRO</strong>
             </a>
             <a
               href="#"

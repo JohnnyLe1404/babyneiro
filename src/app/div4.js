@@ -27,7 +27,7 @@ const Div4 = () => {
             <p className="text-base sm:text-xl md:text-xl lg:text-2xl">
               For the first time in history, two Neiro tokens made their way
               onto Binance Futures and Spot! And in an exciting twist, Binance
-              chose to list NEIROETHCTO over the whale-backed NeiroOnEthereum.
+              chose to list <strong>NEIROETHCTO</strong> over the whale-backed NeiroOnEthereum.
               Why? Because NEIROETHCTO embodies exactly what it promises:
               decentralized, fairly distributed, and fully community-owned—a
               legendary meme in action.
@@ -38,32 +38,32 @@ const Div4 = () => {
 
       {/* div 2 */}
       <div
-        className="min-h-screen bg-cover bg-[#E3E0DA] bg-center flex flex-col items-center justify-center bg-[url('/image/why2.1.png')] md:bg-[url('/image/why2.png')]"
-      >
-        <div className="flex flex-col justify-center w-full max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="ml-auto max-w-prose">
-            <p className="text-base sm:text-xl md:text-xl lg:text-2xl">
-              Now, here's where things get interesting: Remember{" "}
-              <strong>BabyDoge</strong>? In 2021, it hit billions in market cap
-              because it was seen as the beta version of Doge. This season,{" "}
-              <strong>
-                Neiro is set to be the next Doge, and BabyNeiro is primed to be
-                the BabyDoge of this new era
-              </strong>
-              . When Neiro hits a market cap like DOGE, BabyNeiro will follow in
-              its footsteps, reaching billions. BabyDoge just landed on Binance
-              this season—can you imagine the future of BabyNeiro in the
-              upcoming bull run?
-            </p>
-          </div>
+      className="min-h-screen bg-cover bg-[#E3E0DA] bg-center flex flex-col items-center justify-start md:justify-center bg-[url('/image/why2.1.png')] md:bg-[url('/image/why2.png')]"
+    >
+      <div className="flex flex-col justify-start md:justify-center w-full max-w-7xl px-4 sm:px-6 lg:px-8 mt-44 sm:mt-52 md:mt-0">
+        <div className="ml-auto max-w-prose">
+          <p className="text-base sm:text-xl md:text-xl lg:text-2xl">
+            Now, here's where things get interesting: Remember{" "}
+            <strong>BabyDoge</strong>? In 2021, it hit billions in market cap
+            because it was seen as the beta version of Doge. This season,{" "}
+            <strong>
+              Neiro is set to be the next Doge, and BabyNeiro is primed to be
+              the BabyDoge of this new era
+            </strong>
+            . When Neiro hits a market cap like DOGE, BabyNeiro will follow in
+            its footsteps, reaching billions. BabyDoge just landed on Binance
+            this season—can you imagine the future of BabyNeiro in the
+            upcoming bull run?
+          </p>
         </div>
       </div>
+    </div>
 
       {/* div 3 */}
       <div
-        className="min-h-screen bg-cover bg-[#E3E0DA] bg-center flex flex-col items-center justify-center bg-[url('/image/why3.1.png')] md:bg-[url('/image/why3.png')]"
+        className="min-h-screen bg-cover bg-[#E3E0DA] bg-center flex flex-col items-center justify-start md:justify-center  bg-[url('/image/why3.1.png')] md:bg-[url('/image/why3.png')]"
       >
-        <div className="flex flex-col justify-center w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-col justify-center w-full max-w-7xl px-4 sm:px-6 lg:px-8  mt-44 sm:mt-52 md:mt-0">
           <div className="max-w-prose">
             <p className="text-base sm:text-xl md:text-xl lg:text-2xl">
               With all that momentum,{" "}

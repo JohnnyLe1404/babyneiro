@@ -6,7 +6,7 @@ const Div2 = () => {
     id="div2"
       className="min-h-screen bg-cover bg-center text-white flex flex-col items-center bg-[url('/image/bg2.1.png')] md:bg-[url('/image/bg2.png')]"
     >
-      <div className="w-full max-w-full py-6 mx-auto bg-black bg-opacity-25 z-50">
+      {/* <div className="w-full max-w-full py-6 mx-auto bg-black bg-opacity-25 z-50">
         <div className="text-center mb-4 mt-2">
           <h1 className="text-4xl font-bold mb-2">BABYNEIRO on major CEXs?</h1>
           <p className="text-lg">
@@ -38,9 +38,9 @@ const Div2 = () => {
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
 
-      <div className="flex flex-col justify-center max-w-[90%] md:max-w-[70%] lg:max-w-[50%] text-left mt-10 md:mt-20 p-4 md:p-8 ml-auto">
+      <div className="flex flex-col justify-center max-w-[90%] md:max-w-[70%] lg:max-w-[50%] text-left mt-14 md:mt-60 p-4 md:p-8 ml-auto">
         <div className="mb-6 md:mb-10">
           <p className="text-3xl md:text-5xl text-[#334618]">WHO IS</p>
           <p className="text-5xl md:text-7xl font-extrabold text-[#334618]">

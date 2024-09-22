@@ -88,7 +88,7 @@ const Div6 = () => {
 
       {/* h2 at the bottom */}
       <h2 className="text-3xl md:text-5xl lg:text-6xl font-semibold mb-12 md:mb-24 text-center">
-        Follow BABY NEIRO on social media
+        Follow <strong>BABY NEIRO</strong> on social media
       </h2>
     </div>
   );
