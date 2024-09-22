@@ -25,7 +25,7 @@ export default function Div1() {
               width={50}
               height={50}
             />
-            <span className="text-2xl font-bold text-white">NEIRO</span>
+            <span className="text-xl font-bold text-white">BABY<br/>NEIRO</span>
           </div>
         <button className="md:hidden text-white" onClick={toggleMenu}>
           {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -33,14 +33,14 @@ export default function Div1() {
 
         {/* Desktop navigation */}
         <nav className="hidden md:flex justify-center space-x-14 lg:space-x-28 text-2xl text-white items-center">
-          <div className="flex items-center space-x-2">
+          <div className="flex items-center space-x-4">
             <Image
               src="/image/logo.png"
               alt="Neiro Logo"
               width={50}
               height={50}
             />
-            <span className="text-2xl font-bold text-white">NEIRO</span>
+            <span className="text-2xl font-bold text-white">BABY<br/>NEIRO</span>
           </div>
           <Link
             to="div1"
