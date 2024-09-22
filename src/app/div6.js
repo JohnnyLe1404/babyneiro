@@ -3,7 +3,7 @@ import { useState } from "react";
 
 const Div6 = () => {
   const [copyText, setCopyText] = useState(
-    "HhJpBhRRn4g56VsyLuT8DL5Bv31HkXqsrahTTUCZeZg4"
+    "0x8581998b905070B8984d99DC9af2C6800D97dCE1"
   );
   const [isCopied, setIsCopied] = useState(false);
 
@@ -28,18 +28,18 @@ const Div6 = () => {
 
         <div className="flex flex-col space-y-4 md:flex-row md:space-y-0 md:space-x-4 lg:space-x-8 w-full max-w-5xl">
           {[
-            { label: "Symbol", value: "$Myro" },
+            { label: "Symbol", value: "$BABYNEIRO" },
             { label: "Tax", value: "0/0" },
-            { label: "LP", value: "Burned Forever" },
+            { label: "LP", value: "Locked and burned" },
           ].map((item, index) => (
             <div
               key={index}
               className="w-full md:w-1/3 h-20 md:h-24 border-4 border-[#334618] rounded-2xl bg-white flex items-center justify-between px-4"
             >
-              <span className="text-left text-lg md:text-xl lg:text-3xl font-bold">
+              <span className="text-left text-base md:text-lg lg:text-2xl font-bold">
                 {item.label}
               </span>
-              <span className="text-right text-lg md:text-xl lg:text-3xl">
+              <span className="text-right text-base md:text-lg lg:text-2xl">
                 {item.value}
               </span>
             </div>
@@ -51,7 +51,7 @@ const Div6 = () => {
             Token Address
           </span>
           <div className="flex items-center">
-            <span className="text-right text-sm md:text-base lg:text-xl truncate max-w-[150px] md:max-w-[300px] lg:max-w-none">
+            <span className="text-right text-sm md:text-base lg:text-xl truncate max-w-[150px] md:max-w-[300px] lg:max-w-none cursor-pointer" onClick={handleCopy}>
               {isCopied ? "Copied to clipboard" : copyText}
             </span>
             <Image

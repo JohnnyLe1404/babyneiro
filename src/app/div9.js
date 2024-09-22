@@ -25,7 +25,7 @@ const Div9 = () => {
         />
       </div>
       <span className="w-full max-w-[1250px] mt-8 md:mt-6 lg:mt-10 text-start block opacity-40">
-        © 2024 Myro • All Rights Reserved{" "}
+        © 2024 BabyNeiro • All Rights Reserved{" "}
       </span>
     </div>
   );

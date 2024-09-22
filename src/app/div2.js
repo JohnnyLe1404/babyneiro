@@ -3,7 +3,7 @@ import Image from "next/image";
 const Div2 = () => {
   return (
     <div
-    id="div2"
+      id="div2"
       className="min-h-screen bg-cover bg-center text-white flex flex-col items-center bg-[url('/image/bg2.1.png')] md:bg-[url('/image/bg2.png')]"
     >
       {/* <div className="w-full max-w-full py-6 mx-auto bg-black bg-opacity-25 z-50">
@@ -49,12 +49,13 @@ const Div2 = () => {
         </div>
         <div className="space-y-2">
           <p className="text-sm md:text-xl text-[#334618] max-w-[65%]">
-            Neiro is like the little sister to Doge, and she's carrying the meme
-            torch forward! Adopted by <strong>Atsuko Sato</strong>, the same
-            woman who owned Kabosu (the dog behind the iconic Doge meme), Neiro
-            is a true heir to the meme kingdom. And guess what?{" "}
-            <strong>BabyNeiro</strong> is Neiro's very first pup, born with the
-            same unstoppable spirit as her legendary mother.
+            <strong>Neiro</strong> is like the little sister to Doge, and she's
+            carrying the meme torch forward! Adopted by{" "}
+            <strong>Atsuko Sato</strong>, the same woman who owned Kabosu (the
+            dog behind the iconic Doge meme), Neiro is a true heir to the meme
+            kingdom. And guess what? <strong>BabyNeiro</strong> is Neiro's very
+            first pup, born with the same unstoppable spirit as her legendary
+            mother.
           </p>
           <p className="text-sm md:text-xl text-[#334618] max-w-[65%]">
             <strong>BabyNeiro</strong> was the first BabyNeiro token to be

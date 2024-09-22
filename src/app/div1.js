@@ -16,30 +16,32 @@ export default function Div1() {
       className="min-w-screen min-h-screen bg-cover bg-center text-white flex flex-col items-start bg-[url('/image/bg1.1.png')] md:bg-[url('/image/bg1.png')]"
     >
       {/* Header */}
-      <header className="w-full max-w-full justify-between mx-auto flex items-center p-4 bg-black bg-opacity-60 z-50">
-        <div
-          className={`flex items-center space-x-2 ${
-            isMenuOpen ? "" : "md:ml-44"
-          }`}
-        >
-          <Image
-            src="/image/logo.png"
-            alt="Neiro Logo"
-            width={50}
-            height={50}
-          />
-          <span className="text-2xl md:text-4xl font-bold text-white">
-            NEIRO
-          </span>
-        </div>
-
+      <header className="w-full flex justify-between  md:justify-center items-center p-2 md:p-4 bg-black bg-opacity-60 z-50">
         {/* Mobile menu button */}
-        <button className="md:hidden" onClick={toggleMenu}>
+        <div className="flex items-center space-x-2 md:hidden">
+            <Image
+              src="/image/logo.png"
+              alt="Neiro Logo"
+              width={50}
+              height={50}
+            />
+            <span className="text-2xl font-bold text-white">NEIRO</span>
+          </div>
+        <button className="md:hidden text-white" onClick={toggleMenu}>
           {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
 
         {/* Desktop navigation */}
-        <nav className="hidden md:flex justify-center space-x-4 lg:space-x-28 text-lg lg:text-2xl text-white">
+        <nav className="hidden md:flex justify-center space-x-14 lg:space-x-28 text-2xl text-white items-center">
+          <div className="flex items-center space-x-2">
+            <Image
+              src="/image/logo.png"
+              alt="Neiro Logo"
+              width={50}
+              height={50}
+            />
+            <span className="text-2xl font-bold text-white">NEIRO</span>
+          </div>
           <Link
             to="div1"
             smooth={true}
@@ -65,14 +67,6 @@ export default function Div1() {
             Tokenomics
           </Link>
           <Link
-            to="div4"
-            smooth={true}
-            duration={500}
-            className="hover:text-gray-300"
-          >
-            Whitepaper
-          </Link>
-          <Link
             to="div9"
             smooth={true}
             duration={500}
@@ -80,16 +74,15 @@ export default function Div1() {
           >
             Socials
           </Link>
+          <button className="hidden md:block border border-white rounded-full px-3 py-1 lg:px-4 lg:py-2 hover:bg-gray-600 text-sm lg:text-base text-white">
+            Join Telegram
+          </button>
         </nav>
-
-        <button className="hidden md:block border border-white rounded-full px-4 py-2 hover:bg-gray-600 text-lg lg:text-2xl text-white mr-44">
-          Join Telegram
-        </button>
       </header>
 
       {/* Mobile menu */}
       {isMenuOpen && (
-        <div className="md:hidden w-full bg-black bg-opacity-90 text-white">
+        <div className="md:hidden w-full bg-black bg-opacity-50 text-white">
           <nav className="flex flex-col items-center py-4 space-y-4 text-xl">
             <Link
               to="div1"
@@ -116,14 +109,6 @@ export default function Div1() {
               Tokenomics
             </Link>
             <Link
-              to="div4"
-              smooth={true}
-              duration={500}
-              className="hover:text-gray-300"
-            >
-              Whitepaper
-            </Link>
-            <Link
               to="div9"
               smooth={true}
               duration={500}
@@ -131,6 +116,9 @@ export default function Div1() {
             >
               Socials
             </Link>
+            <button className="border border-white rounded-full px-3 py-1 hover:bg-gray-600 text-base">
+              Join Telegram
+            </button>
           </nav>
         </div>
       )}
