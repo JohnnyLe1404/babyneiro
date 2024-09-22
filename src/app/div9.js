@@ -3,8 +3,9 @@ import Image from "next/image";
 const Div9 = () => {
   return (
     <div
-    name="div9"
-     className="bg-[url('/image/footer.png')] bg-[#fbfaf9] bg-cover bg-center w-full py-8 md:py-12 lg:py-16 flex flex-col items-center">
+      name="div9"
+      className="bg-[url('/image/footer.png')] bg-[#fbfaf9] bg-cover bg-center w-full py-8 md:py-12 lg:py-16 flex flex-col items-center"
+    >
       <div className="w-full flex flex-col md:flex-row justify-around items-center px-4 md:px-8 lg:px-16 space-y-4 md:space-y-0">
         <div className="text-4xl md:text-4xl lg:text-6xl font-bold text-center md:text-left">
           BABY NEIRO
@@ -15,14 +16,36 @@ const Div9 = () => {
           excitement of the blockchain (along with those notorious gas fees).
         </div>
       </div>
-      <div className="w-full max-w-[1250px] mt-8 flex justify-center md:justify-start space-x-8 items-center border-b-2 border-opacity-50 border-white pb-4">
-        <Image src="/image/x.png" alt="X Logo" width={56} height={56} />
-        <Image
-          src="/image/telegram.png"
-          alt="Telegram Logo"
-          width={56}
-          height={56}
-        />
+      <div className="w-full max-w-[1200px] mt-8 flex justify-center md:justify-start space-x-8 items-center border-b-2 border-opacity-50 border-white pb-4">
+        <div className="flex space-x-4 justify-center items-center">
+          <a href="https://x.com/babyneiroethcto" target="_blank" rel="noopener noreferrer">
+            <Image src="/image/x2.png" alt="X Logo" width={35} height={35} />
+          </a>
+          <a href="https://t.me/babyneiro_ethcto" target="_blank" rel="noopener noreferrer">
+            <Image
+              src="/image/telegram2.png"
+              alt="Telegram Logo"
+              width={40}
+              height={40}
+            />
+          </a>
+          <a href="https://www.dextools.io/app/en/ether/pair-explorer/0x4e8b4ab7eca3df46f62ad5d9b7a0ea6bbe5d3821" target="_blank" rel="noopener noreferrer">
+            <Image
+              src="/image/dextool2.png"
+              alt="dextool Logo"
+              width={35}
+              height={35}
+            />
+          </a>
+          <a href="https://dexscreener.com/ethereum/0x4e8b4ab7eca3df46f62ad5d9b7a0ea6bbe5d3821" target="_blank" rel="noopener noreferrer">
+            <Image
+              src="/image/dexscreen2.png"
+              alt="dexscreen Logo"
+              width={45}
+              height={45}
+            />
+          </a>
+        </div>
       </div>
       <span className="w-full max-w-[1250px] mt-8 md:mt-6 lg:mt-10 text-start block opacity-40">
         © 2024 BabyNeiro • All Rights Reserved{" "}

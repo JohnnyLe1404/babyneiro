@@ -51,7 +51,10 @@ const Div6 = () => {
             Token Address
           </span>
           <div className="flex items-center">
-            <span className="text-right text-sm md:text-base lg:text-xl truncate max-w-[150px] md:max-w-[300px] lg:max-w-none cursor-pointer" onClick={handleCopy}>
+            <span
+              className="text-right text-sm md:text-base lg:text-xl truncate max-w-[150px] md:max-w-[300px] lg:max-w-none cursor-pointer"
+              onClick={handleCopy}
+            >
               {isCopied ? "Copied to clipboard" : copyText}
             </span>
             <Image
@@ -67,22 +70,62 @@ const Div6 = () => {
       </div>
 
       {/* Follow icons centered */}
-      <div className="flex justify-center items-center flex-grow">
-        <div className="flex space-x-64 md:space-x-[40rem] lg:space-x-[50rem]">
-          <Image
-            src="/image/x.png"
-            alt="X Icon"
-            width={48}
-            height={48}
-            className="w-8 h-8 md:w-12 md:h-12 lg:w-16 lg:h-16"
-          />
-          <Image
-            src="/image/telegram.png"
-            alt="Telegram Icon"
-            width={48}
-            height={48}
-            className="w-8 h-8 md:w-12 md:h-12 lg:w-16 lg:h-16"
-          />
+      <div className="flex justify-between items-center flex-grow px-4 md:px-80">
+        <div className="flex space-x-10 md:space-x-36 items-center mt-80 md:mt-0">
+          <a
+            href="https://x.com/babyneiroethcto"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image
+              src="/image/x3.png"
+              alt="X Icon"
+              width={40} // Giảm kích thước cho di động
+              height={40} // Giảm kích thước cho di động
+              className="w-10 h-10 md:w-12 md:h-12 lg:w-16 lg:h-16"
+            />
+          </a>
+          <a
+            href="https://www.dextools.io/app/en/ether/pair-explorer/0x4e8b4ab7eca3df46f62ad5d9b7a0ea6bbe5d3821"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image
+              src="/image/dextool3.png"
+              alt="dextool Icon"
+              width={40} // Giảm kích thước cho di động
+              height={40} // Giảm kích thước cho di động
+              className="w-10 h-10 md:w-12 md:h-12 lg:w-16 lg:h-16"
+            />
+          </a>
+        </div>
+        <div className="flex space-x-10 md:space-x-36 items-center  mt-80 md:mt-0">
+          <a
+            href="https://dexscreener.com/ethereum/0x4e8b4ab7eca3df46f62ad5d9b7a0ea6bbe5d3821"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image
+              src="/image/dexscreen3.png"
+              alt="dexscreen Icon"
+              width={40} // Giảm kích thước cho di động
+              height={40} // Giảm kích thước cho di động
+              className="w-12 h-12 md:w-14 md:h-14 lg:w-20 lg:h-20"
+            />
+          </a>
+          <a
+            href="https://t.me/babyneiro_ethcto"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image
+              src="/image/telegram3.png"
+              alt="telegram Icon"
+              width={40} // Giảm kích thước cho di động
+              height={40} // Giảm kích thước cho di động
+              className="w-10 h-10 md:w-12 md:h-12 lg:w-16 lg:h-16"
+            />
+          </a>
         </div>
       </div>
 

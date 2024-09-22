@@ -19,14 +19,18 @@ export default function Div1() {
       <header className="w-full flex justify-between  md:justify-center items-center p-2 md:p-4 bg-black bg-opacity-60 z-50">
         {/* Mobile menu button */}
         <div className="flex items-center space-x-2 md:hidden">
-            <Image
-              src="/image/logo.png"
-              alt="Neiro Logo"
-              width={50}
-              height={50}
-            />
-            <span className="text-xl font-bold text-white">BABY<br/>NEIRO</span>
-          </div>
+          <Image
+            src="/image/logo.png"
+            alt="Neiro Logo"
+            width={50}
+            height={50}
+          />
+          <span className="text-xl font-bold text-white">
+            BABY
+            <br />
+            NEIRO
+          </span>
+        </div>
         <button className="md:hidden text-white" onClick={toggleMenu}>
           {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
@@ -40,13 +44,17 @@ export default function Div1() {
               width={50}
               height={50}
             />
-            <span className="text-2xl font-bold text-white">BABY<br/>NEIRO</span>
+            <span className="text-2xl font-bold text-white">
+              BABY
+              <br />
+              NEIRO
+            </span>
           </div>
           <Link
             to="div1"
             smooth={true}
             duration={500}
-            className="hover:text-gray-300"
+            className="hover:text-gray-300 cursor-pointer"
           >
             Home
           </Link>
@@ -54,7 +62,7 @@ export default function Div1() {
             to="div2"
             smooth={true}
             duration={500}
-            className="hover:text-gray-300"
+            className="hover:text-gray-300 cursor-pointer"
           >
             About
           </Link>
@@ -62,21 +70,55 @@ export default function Div1() {
             to="div6"
             smooth={true}
             duration={500}
-            className="hover:text-gray-300"
+            className="hover:text-gray-300 cursor-pointer"
           >
             Tokenomics
           </Link>
-          <Link
-            to="div9"
-            smooth={true}
-            duration={500}
-            className="hover:text-gray-300"
-          >
-            Socials
-          </Link>
-          <button className="hidden md:block border border-white rounded-full px-3 py-1 lg:px-4 lg:py-2 hover:bg-gray-600 text-sm lg:text-base text-white">
-            Join Telegram
-          </button>
+          <div className="flex space-x-14 justify-center items-center">
+            <a
+              href="https://x.com/babyneiroethcto"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image src="/image/x2.png" alt="X Logo" width={30} height={30} />
+            </a>
+            <a
+              href="https://t.me/babyneiro_ethcto"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                src="/image/telegram2.png"
+                alt="Telegram Logo"
+                width={35}
+                height={35}
+              />
+            </a>
+            <a
+              href="https://www.dextools.io/app/en/ether/pair-explorer/0x4e8b4ab7eca3df46f62ad5d9b7a0ea6bbe5d3821"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                src="/image/dextool2.png"
+                alt="dextool Logo"
+                width={30}
+                height={30}
+              />
+            </a>
+            <a
+              href="https://dexscreener.com/ethereum/0x4e8b4ab7eca3df46f62ad5d9b7a0ea6bbe5d3821"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                src="/image/dexscreen2.png"
+                alt="dexscreen Logo"
+                width={40}
+                height={40}
+              />
+            </a>
+          </div>
         </nav>
       </header>
 
@@ -88,7 +130,7 @@ export default function Div1() {
               to="div1"
               smooth={true}
               duration={500}
-              className="hover:text-gray-300"
+              className="hover:text-gray-300 cursor-pointer"
             >
               Home
             </Link>
@@ -96,7 +138,7 @@ export default function Div1() {
               to="div2"
               smooth={true}
               duration={500}
-              className="hover:text-gray-300"
+              className="hover:text-gray-300 cursor-pointer"
             >
               About
             </Link>
@@ -104,21 +146,55 @@ export default function Div1() {
               to="div6"
               smooth={true}
               duration={500}
-              className="hover:text-gray-300"
+              className="hover:text-gray-300 cursor-pointer"
             >
               Tokenomics
             </Link>
-            <Link
-              to="div9"
-              smooth={true}
-              duration={500}
-              className="hover:text-gray-300"
-            >
-              Socials
-            </Link>
-            <button className="border border-white rounded-full px-3 py-1 hover:bg-gray-600 text-base">
-              Join Telegram
-            </button>
+            <div className="flex space-x-8 justify-center items-center">
+              <a
+                href="https://x.com/babyneiroethcto"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image src="/image/x2.png" alt="X Logo" width={30} height={30} />
+              </a>
+              <a
+                href="https://t.me/babyneiro_ethcto"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image
+                  src="/image/telegram2.png"
+                  alt="Telegram Logo"
+                  width={35}
+                  height={35}
+                />
+              </a>
+              <a
+                href="https://www.dextools.io/app/en/ether/pair-explorer/0x4e8b4ab7eca3df46f62ad5d9b7a0ea6bbe5d3821"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image
+                  src="/image/dextool2.png"
+                  alt="dextool Logo"
+                  width={30}
+                  height={30}
+                />
+              </a>
+              <a
+                href="https://dexscreener.com/ethereum/0x4e8b4ab7eca3df46f62ad5d9b7a0ea6bbe5d3821"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image
+                  src="/image/dexscreen2.png"
+                  alt="dexscreen Logo"
+                  width={40}
+                  height={40}
+                />
+              </a>
+            </div>
           </nav>
         </div>
       )}
@@ -145,16 +221,12 @@ export default function Div1() {
           </p>
           <div className="space-y-4 md:space-y-0 md:space-x-4">
             <a
-              href="#"
+              href="https://app.uniswap.org/swap?outputCurrency=0x8581998b905070B8984d99DC9af2C6800D97dCE1"
+              target="_blank" /* This ensures it opens in a new tab */
+              rel="noopener noreferrer" /* For security best practices */
               className="bg-white text-black border border-black rounded-full px-6 py-3 inline-block hover:bg-gray-300 w-full md:w-auto"
             >
               Buy <strong>$BABYNEIRO</strong>
-            </a>
-            <a
-              href="#"
-              className="bg-black bg-opacity-20 text-white border border-white rounded-full px-6 py-3 inline-block hover:bg-gray-800 hover:border-gray-400 w-full md:w-auto"
-            >
-              Learn More
             </a>
           </div>
         </div>

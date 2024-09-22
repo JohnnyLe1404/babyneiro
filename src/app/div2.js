@@ -48,7 +48,7 @@ const Div2 = () => {
           </p>
         </div>
         <div className="space-y-2">
-          <p className="text-sm md:text-xl text-[#334618] max-w-[65%]">
+          <p className="text-sm md:text-xl text-[#334618]  max-w-[65%]">
             <strong>Neiro</strong> is like the little sister to Doge, and she's
             carrying the meme torch forward! Adopted by{" "}
             <strong>Atsuko Sato</strong>, the same woman who owned Kabosu (the
