@@ -13,7 +13,10 @@ const config: Config = {
         foreground: "var(--foreground)",
       },
       scale: {
-        '90': '0.90',
+        "90": "0.90",
+      },
+      fontFamily: {
+        cattyla: ["Cattyla"],
       },
     },
   },

@@ -4,10 +4,10 @@ const Div4 = () => {
   return (
     <main
     name="div4"
-     className="text-[#334618]">
+     className="text-white">
       {/* div 1 */}
       <div
-        className="min-h-screen bg-cover bg-[#E3E0DA] bg-center flex flex-col items-center bg-[url('/image/why1.1.png')] md:bg-[url('/image/why1.png')]"
+        className="min-h-screen bg-cover bg-black bg-center flex flex-col items-center bg-[url('/image/why1.1.png')] md:bg-[url('/image/why1.png')]"
       >
         <div className="flex flex-col justify-center w-full max-w-7xl px-4 sm:px-6 lg:px-8 mt-10 md:mt-20">
           <div className="mb-6 md:mb-10">
@@ -15,7 +15,7 @@ const Div4 = () => {
               WHY CHOOSE
             </h2>
             <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold">
-              BABY NEIRO?
+              BABYNEIRO?
             </h1>
           </div>
           <div className="space-y-4 max-w-prose">
@@ -38,7 +38,7 @@ const Div4 = () => {
 
       {/* div 2 */}
       <div
-      className="min-h-screen bg-cover bg-[#E3E0DA] bg-center flex flex-col items-center justify-start md:justify-center bg-[url('/image/why2.1.png')] md:bg-[url('/image/why2.png')]"
+      className="min-h-screen bg-cover bg-black bg-center flex flex-col items-center justify-start md:justify-center bg-[url('/image/why2.1.png')] md:bg-[url('/image/why2.png')]"
     >
       <div className="flex flex-col justify-start md:justify-center w-full max-w-7xl px-4 sm:px-6 lg:px-8 mt-44 sm:mt-52 md:mt-0">
         <div className="ml-auto max-w-prose">
@@ -61,7 +61,7 @@ const Div4 = () => {
 
       {/* div 3 */}
       <div
-        className="min-h-screen bg-cover bg-[#E3E0DA] bg-center flex flex-col items-center justify-start md:justify-center  bg-[url('/image/why3.1.png')] md:bg-[url('/image/why3.png')]"
+        className="min-h-screen bg-cover bg-black bg-center flex flex-col items-center justify-start md:justify-center  bg-[url('/image/why3.1.png')] md:bg-[url('/image/why3.png')]"
       >
         <div className="flex flex-col justify-center w-full max-w-7xl px-4 sm:px-6 lg:px-8  mt-44 sm:mt-52 md:mt-0">
           <div className="max-w-prose">

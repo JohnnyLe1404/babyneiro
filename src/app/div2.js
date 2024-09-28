@@ -40,15 +40,15 @@ const Div2 = () => {
         </div>
       </div> */}
 
-      <div className="flex flex-col justify-center max-w-[90%] md:max-w-[70%] lg:max-w-[50%] text-left mt-14 md:mt-60 p-4 md:p-8 ml-auto">
+      <div className="flex flex-col justify-center max-w-[90%] md:max-w-[70%] lg:max-w-[50%] text-left mt-14 md:mt-72 p-4 md:p-8 ml-auto">
         <div className="mb-6 md:mb-10">
-          <p className="text-3xl md:text-5xl text-[#334618]">WHO IS</p>
-          <p className="text-5xl md:text-7xl font-extrabold text-[#334618]">
+          <p className="text-3xl md:text-5xl text-white">WHO IS</p>
+          <p className="text-5xl md:text-7xl font-extrabold text-white">
             BABY NEIRO
           </p>
         </div>
         <div className="space-y-2">
-          <p className="text-sm md:text-xl text-[#334618]  max-w-[65%]">
+          <p className="text-sm md:text-2xl text-white  max-w-[90%]">
             <strong>Neiro</strong> is like the little sister to Doge, and she's
             carrying the meme torch forward! Adopted by{" "}
             <strong>Atsuko Sato</strong>, the same woman who owned Kabosu (the
@@ -57,7 +57,7 @@ const Div2 = () => {
             first pup, born with the same unstoppable spirit as her legendary
             mother.
           </p>
-          <p className="text-sm md:text-xl text-[#334618] max-w-[65%]">
+          <p className="text-sm md:text-2xl text-white max-w-[90%]">
             <strong>BabyNeiro</strong> was the first BabyNeiro token to be
             deployed on Ethereum, but its journey wasn't smooth. After being
             left behind by its original developer, we, the community decided to

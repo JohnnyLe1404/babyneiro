@@ -13,10 +13,17 @@ const Div6 = () => {
       setTimeout(() => setIsCopied(false), 350);
     });
   };
+
+  const formatAddress = (address) => {
+    if (address.length > 12) {
+      return `${address.slice(0, 4)}...${address.slice(-4)}`;
+    }
+    return address;
+  };
   return (
     <div
       name="div6"
-      className="bg-[url('/image/bg6.png')] bg-cover bg-center text-[#334618] min-h-screen w-full flex flex-col justify-between p-4 space-y-4 md:space-y-6 lg:space-y-8"
+      className="bg-[url('/image/bg6.png')] bg-cover bg-center text-white min-h-screen w-full flex flex-col justify-between p-4 space-y-4 md:space-y-6 lg:space-y-8"
     >
       {/* Tokenomics Section - Moved to the top */}
       <div className="flex flex-col items-center space-y-4 md:space-y-6 lg:space-y-8">
@@ -34,7 +41,7 @@ const Div6 = () => {
           ].map((item, index) => (
             <div
               key={index}
-              className="w-full md:w-1/3 h-20 md:h-24 border-4 border-[#334618] rounded-2xl bg-white flex items-center justify-between px-4"
+              className="w-full md:w-1/3 h-20 md:h-24 border-4 border-white rounded-2xl bg-transparent flex items-center justify-between px-4"
             >
               <span className="text-left text-base md:text-lg lg:text-2xl font-bold">
                 {item.label}
@@ -46,7 +53,7 @@ const Div6 = () => {
           ))}
         </div>
 
-        <div className="w-full max-w-5xl h-20 md:h-24 border-4 border-[#334618] rounded-2xl bg-white flex items-center justify-between px-4">
+        <div className="w-full max-w-5xl h-20 md:h-24 border-4 border-white rounded-2xl bg-transparent flex items-center justify-between px-4">
           <span className="text-left text-lg md:text-xl lg:text-3xl font-bold">
             Token Address
           </span>
@@ -70,19 +77,19 @@ const Div6 = () => {
       </div>
 
       {/* Follow icons centered */}
-      <div className="flex justify-between items-center flex-grow px-4 md:px-80">
-        <div className="flex space-x-10 md:space-x-36 items-center mt-80 md:mt-0">
+      <div className="flex justify-between items-center flex-grow px-4 md:px-10 lg:px-64">
+      <div className="flex space-x-10 md:space-x-36 items-center mt-80 md:mt-0">
           <a
             href="https://x.com/babyneiroethcto"
             target="_blank"
             rel="noopener noreferrer"
           >
             <Image
-              src="/image/x3.png"
+              src="/image/x2.png"
               alt="X Icon"
               width={40} // Giảm kích thước cho di động
               height={40} // Giảm kích thước cho di động
-              className="w-10 h-10 md:w-12 md:h-12 lg:w-16 lg:h-16"
+              className="w-12 h-12 md:w-16 md:h-16 object-contain"
             />
           </a>
           <a
@@ -91,11 +98,11 @@ const Div6 = () => {
             rel="noopener noreferrer"
           >
             <Image
-              src="/image/dextool3.png"
+              src="/image/dextool2.png"
               alt="dextool Icon"
               width={40} // Giảm kích thước cho di động
               height={40} // Giảm kích thước cho di động
-              className="w-10 h-10 md:w-12 md:h-12 lg:w-16 lg:h-16"
+              className="w-12 h-12 md:w-16 md:h-16 object-contain"
             />
           </a>
         </div>
@@ -106,11 +113,11 @@ const Div6 = () => {
             rel="noopener noreferrer"
           >
             <Image
-              src="/image/dexscreen3.png"
+              src="/image/dexscreen2.png"
               alt="dexscreen Icon"
               width={40} // Giảm kích thước cho di động
               height={40} // Giảm kích thước cho di động
-              className="w-12 h-12 md:w-14 md:h-14 lg:w-20 lg:h-20"
+              className="w-12 h-12 md:w-16 md:h-16 object-contain"
             />
           </a>
           <a
@@ -119,11 +126,11 @@ const Div6 = () => {
             rel="noopener noreferrer"
           >
             <Image
-              src="/image/telegram3.png"
+              src="/image/telegram2.png"
               alt="telegram Icon"
               width={40} // Giảm kích thước cho di động
               height={40} // Giảm kích thước cho di động
-              className="w-10 h-10 md:w-12 md:h-12 lg:w-16 lg:h-16"
+              className="w-12 h-12 md:w-16 md:h-16 object-contain"
             />
           </a>
         </div>

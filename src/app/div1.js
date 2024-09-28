@@ -10,6 +10,18 @@ export default function Div1() {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const [copyText, setCopyText] = useState(
+    "0x8581998b905070B8984d99DC9af2C6800D97dCE1"
+  );
+  const [isCopied, setIsCopied] = useState(false);
+
+  const handleCopy = () => {
+    navigator.clipboard.writeText(copyText).then(() => {
+      setIsCopied(true);
+      setTimeout(() => setIsCopied(false), 350);
+    });
+  };
+
   return (
     <div
       name="div1"
@@ -200,15 +212,31 @@ export default function Div1() {
       )}
 
       {/* Content */}
-      <div className="flex flex-col items-center mt-40 md:mt-44 md:ml-52 text-center px-4 md:px-0">
+      <div className="flex flex-col items-center mt-24 md:mt-44 md:ml-72 text-center px-4 md:px-0">
         <div className="flex flex-col items-center text-center">
           <h1 className="text-5xl md:text-6xl font-bold mt-4 mb-2 md:mb-4">
             Meet
           </h1>
-          <div className="flex items-center space-x-2 mb-2">
+          <div className="flex items-center space-x-2 mb-6">
             <h2 className="text-5xl md:text-8xl font-extrabold mb-2 md:mb-4 text-white">
               BABYNEIRO
             </h2>
+          </div>
+          <div className="flex items-center mb-4">
+            <span
+              className="text-right text-xs md:text-lg lg:text-2xl truncate max-w-[400px] md:max-w-[300px] font-semibold lg:max-w-none cursor-pointer"
+              onClick={handleCopy}
+            >
+              {isCopied ? "Copied to clipboard" : copyText}
+            </span>
+            <Image
+              src="/image/copy.png"
+              alt="Copy Icon"
+              width={24}
+              height={24}
+              className="ml-2 w-4 h-4 md:w-8 md:h-8 object-contain cursor-pointer"
+              onClick={handleCopy}
+            />
           </div>
           <p className="text-gray-100 mb-6 text-base md:text-lg px-4 md:px-0">
             <span className="text-3xl md:text-4xl">

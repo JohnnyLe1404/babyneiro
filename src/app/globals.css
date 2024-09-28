@@ -30,3 +30,7 @@ html {
   scroll-behavior: smooth;
 }
 
+@font-face {
+  font-family: 'Cattyla';
+  src: url('/fonts/Cattyla.ttf') format('truetype');
+}
