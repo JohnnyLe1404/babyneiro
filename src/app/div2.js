@@ -44,7 +44,7 @@ const Div2 = () => {
         <div className="mb-6 md:mb-10">
           <p className="text-3xl md:text-5xl text-white">WHO IS</p>
           <p className="text-5xl md:text-7xl font-extrabold text-white">
-            BABY NEIRO
+            BABYNEIRO
           </p>
         </div>
         <div className="space-y-2">
